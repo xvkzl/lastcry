@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  background: #000;
+}
+
+body {
+  background: #000;
+  overflow: hidden;
+}
+
+main {
+  @apply min-h-screen bg-black text-white flex flex-col;
+}
+
+/* ENTER SCREEN */
+
+.loading-screen {
+  @apply fixed inset-0 flex items-center justify-center bg-black z-[9999];
+
+  cursor: pointer;
+}
+
+.loading-content {
+  @apply flex flex-col items-center;
+}
+
+.loading-title {
+  color: #777777;
+
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+  font-weight: 700;
+
+  letter-spacing: 0.7rem;
+  text-transform: uppercase;
+
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.12),
+    0 0 20px rgba(255, 255, 255, 0.06);
+
+  user-select: none;
+}
+
+.loading-subtitle {
+  margin-top: 0.75rem;
+
+  color: #525252;
+
+  font-family: "Cinzel", serif;
+  font-size: 0.85rem;
+
+  letter-spacing: 0.35rem;
+  text-transform: uppercase;
+
+  user-select: none;
+}
+
+/* MAIN CONTENT */
+
+.header-text {
+  @apply mt-10 text-center font-bold;
+
+  color: #777777;
+
+  font-family: "Cinzel", serif;
+  font-size: 3rem;
+
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+}
+
+.bio {
+  @apply mt-3 text-center;
+
+  color: #525252;
+
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+}
